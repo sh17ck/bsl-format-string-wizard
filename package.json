@@ -22,10 +22,52 @@
   "main": "./dist/extension.js",
   "l10n": "./l10n",
   "contributes": {
+    "configuration": {
+      "title": "%configuration.title%",
+      "properties": {
+        "bsl-format-string-wizard.useRussianTerms": {
+          "type": "boolean",
+          "default": true,
+          "description": "%configuration.useRussianTerms.description%"
+        }
+      }
+    },
     "commands": [
       {
-        "command": "bsl-format-string-wizard.helloWorld",
-        "title": "Hello World"
+        "command": "bsl-format-string-wizard.quickPickFormatString",
+        "title": "%command.quickPickFormatString.title%",
+        "category": "%category.bslFormatStringWizard%"
+      },
+      {
+        "command": "bsl-format-string-wizard.handleCtrlEnter",
+        "title": "%command.handleCtrlEnter.title%",
+        "category": "%category.bslFormatStringWizard%"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "bsl-format-string-wizard.quickPickFormatString",
+          "when": "editorLangId == 'bsl' || resourceExtname == '.bsl' || resourceExtname == '.os'"
+        },
+        {
+          "command": "bsl-format-string-wizard.handleCtrlEnter",
+          "when": "false"
+        }
+      ],
+      "editor/context": [
+        {
+          "command": "bsl-format-string-wizard.quickPickFormatString",
+          "when": "editorLangId == 'bsl' || resourceExtname == '.bsl' || resourceExtname == '.os'",
+          "group": "bslFormatStringWizard"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "bsl-format-string-wizard.handleCtrlEnter",
+        "key": "ctrl+enter",
+        "when": "inQuickOpen && isMyQuickPickActive"
       }
     ]
   },
