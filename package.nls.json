@@ -1,4 +1,9 @@
 {
   "extension.displayName": "BSL Format String Wizard",
-  "extension.description": "Format String Wizard for BSL (1C:Enterprise programming language)."
-} 
+  "extension.description": "Format String Wizard for BSL (1C:Enterprise programming language).",
+  "category.bslFormatStringWizard": "BSL Format String Wizard",
+  "command.quickPickFormatString.title": "Format String Wizard...",
+  "command.handleCtrlEnter.title": "Complete selection (Ctrl+Enter)",
+  "configuration.title": "BSL Format String Wizard",
+  "configuration.useRussianTerms.description": "Use Russian terms for parameters (e.g., Л, ЧЦ, ДФ, БЛ)."
+}

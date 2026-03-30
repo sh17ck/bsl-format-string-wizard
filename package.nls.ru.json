@@ -1,4 +1,9 @@
 {
+  "category.bslFormatStringWizard": "Конструктор форматной строки BSL",
   "extension.displayName": "Конструктор форматной строки BSL",
-  "extension.description": "Конструктор форматной строки для BSL (встроенный язык программирования 1С:Предприятие)."
-} 
+  "extension.description": "Конструктор форматной строки для BSL (встроенный язык программирования 1С:Предприятие).",
+  "command.quickPickFormatString.title": "Конструктор форматной строки...",
+  "command.handleCtrlEnter.title": "Завершить выбор (Ctrl+Enter)",
+  "configuration.title": "Конструктор форматной строки BSL",
+  "configuration.useRussianTerms.description": "Использовать русские термины для параметров (например, Л, ЧЦ, ДФ, БЛ)."
+}
